@@ -84,7 +84,7 @@ Top 3 accuracy exceeding 70%  as a result returned less than 3 seconds
 ## Experiment 1 and Result Analysis
 
 ### Gist
-My first experiment start with MobileNet, the code is in <b>Experiment1_[tf_mobilenet_model].ipynb.</b>
+My first experiment start with MobileNet, the code is in <b>Experiment1_[tf_mobilenet_model].ipynb [model.h5](https://drive.google.com/file/d/1iCr9qfQrKL4Y7WJcAbIVWcz6QXLyPHRL/view?usp=sharing). </b>
 
 The basic ideas are as below:
 1. Finding out the repeated images in given dataset, and carefully splitting the train and test dataset in order to make sure there is no duplicated images are taken into test set.
@@ -100,7 +100,8 @@ The basic ideas are as below:
 6. Callback involves checkpoint, reduce_lr, earlyStopping
 
 ### Outcome
-
+After 30 epoch, the training accuracy is around 90%, while the validation accuracy is around 0.74%.
+From the ploted graph, I noticed that the training loss is smoothly decrease, but there are many fluctuations in validation loss. and the same pattern happenes in accuracy. Possible reasons are inproperiate big learning rate and small batch size.
 
 ## Experiment 2 and Result Analysis
 
