@@ -26,13 +26,13 @@ Top 3 accuracy exceeding 70%  as a result returned less than 3 seconds
 * Data augmentation to reduce dataset imbalance and the small amount of data.
 
 ## Model Selection
-* Originally, there are many choices, like yolo3, SSD, mask-rcnn, etc. But since this challenge is pure mutiple classification task, it is unnecessary to involve object detection and other technologies, because for example, the bounding box regression is taking significant computation time in calculating IOU, meanwhile, HAM10K dataset does not provide bounding box. So, due to literature review solutions and the data volume size, the classical networks like VGG19, ResNet50, etc are in the list as potential seletions.
+* Originally, there are many choices, like yolo3, SSD, mask-rcnn, etc. But since this challenge is pure mutiple classification task, it is unnecessary to involve object detection and other technologies, because for example, the bounding box regression is taking significant computation time in calculating IOU, meanwhile, HAM10K dataset does not provide bounding box. So, due to literature review solutions and the data volume size, the classical networks like VGG19, ResNet50, etc are shortlisted as potential seletions.
 
 
 * Data -> Model complexity estimation candidate:
 
 
-    1. GoogleNet Inception v3 in literature review 1 with 129,450 clinical images(299 X 299) -> 10 times bigger than HAM10,000 dataset, so Inception v3 is the upper limit in model seletion.
+    1. GoogleNet Inception v3 in literature review 1 with 129,450 clinical images(299 X 299) -> 10 times bigger than HAM10K dataset, so Inception v3 is the upper limit in model seletion.
     
     2. VGG 16 is used in literature review 2 & 3. But based on the below comparison, it is very huge without obvious strength.
 
@@ -41,7 +41,7 @@ Top 3 accuracy exceeding 70%  as a result returned less than 3 seconds
     4. In order to double confirm the model choice, I may also use DenseNet121 or NASNetMobile for verification.
     
 
-![Keras Model Complexity Comparison](https://i.imgur.com/VLtVZnC.png)
+        ![Keras Model Complexity Comparison](https://i.imgur.com/VLtVZnC.png)
 
 ## Nice to have features
 1. t-SNE for visulization on last hidden layer feature map.
