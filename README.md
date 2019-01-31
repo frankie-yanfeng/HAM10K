@@ -26,7 +26,7 @@ Top 3 accuracy exceeding 70%  as a result returned less than 3 seconds
 * Data augmentation to reduce dataset imbalance and the small amount of data.
 
 ## Model Selection
-* Originally, there are many choices, like yolo3, SSD, mask-rcnn, etc. But since this challenge is pure mutiple classification task, it is unnecessary to involve object detection and other technologies, because for example, the bounding box regression is taking significant computation time in calculating IOU, meanwhile, HAM10,000 does not provide bounding box. So, due to literature review and the data volume size, the classical networks like VGG19, ResNet50, etc are in the list as potential seletions.
+* Originally, there are many choices, like yolo3, SSD, mask-rcnn, etc. But since this challenge is pure mutiple classification task, it is unnecessary to involve object detection and other technologies, because for example, the bounding box regression is taking significant computation time in calculating IOU, meanwhile, HAM10K dataset does not provide bounding box. So, due to literature review and the data volume size, the classical networks like VGG19, ResNet50, etc are in the list as potential seletions.
 
 
 * Data -> Model complexity estimation candidate:
