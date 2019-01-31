@@ -101,7 +101,7 @@ The basic ideas are as below:
 
 ### Outcome
 After 30 epoch, the training accuracy is around 90%, while the validation accuracy is around 0.74%.
-From the ploted graph, I noticed that the training loss is smoothly decrease, but there are many fluctuations in validation loss. and the same pattern happenes in accuracy. Possible reasons are inproperiate big learning rate and small batch size.
+From the ploted graph, I noticed that the training loss is smoothly decrease, but there are many fluctuations in validation loss. and the same pattern happenes in accuracy. Possible reasons are inproperiate big learning rate and small batch size. But at this moment, I intend to focus on searching better models instead of hyperparameter tuning.
 
 ## Experiment 2 and Result Analysis
 
@@ -119,3 +119,11 @@ So it seems the first trail is relatively successful. But there are some issues 
 3.  nv & bcc, nv & df and nv & mel, etc are relatively difficult to be differentiated.
 
 4. Even with the boost of data augmentation, the minorities are still in poor performance, which may be explained by lacking of variety amd model memory.
+
+## Experiment 3 and Result Analysis
+Based on the effort spent on experiment 1 and 2, in experimet 3, I intend to find some lost cost solutions to agily try models at scale in terms of time.
+
+So, I recall one of the project did before - [tensorflow official example on image classifier retraining](https://www.tensorflow.org/hub/tutorials/image_retraining#other_architectures), with this scaffold, I can try each model from the [tensorflow hub](https://tfhub.dev/s?module-type=image-feature-vector) very easily.
+
+
+
