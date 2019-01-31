@@ -146,10 +146,16 @@ But the positive side is taht with the help of bottleneck I can test models in a
 
 ## Experiment 5 and Result Analysis
 
-After a pause, I search for others solutions especially on the model selection part. [Deep Learning Notes: Skin Cancer Classification using DenseNets and ResNets](https://medium.com/@peijin/deep-learning-notes-skin-cancer-classification-using-densenets-and-resnets-6a122d818d58) gives a good comparision, and the results of validation accuracy given on ResNet50 is similar to what I get in experiment 1 & 2 and the result in literature review 2 & 3, because the benchmark above shows ResNet and MObileNet acuracy is very close.
+After a pause, I search for others solutions especially on the model selection part. [Deep Learning Notes: Skin Cancer Classification using DenseNets and ResNets](https://medium.com/@peijin/deep-learning-notes-skin-cancer-classification-using-densenets-and-resnets-6a122d818d58) gives a good comparision, and the results of validation accuracy given on ResNet50 is similar to what I get in experiment 1 & 2 and the result in literature review 2 & 3, because the benchmark above shows ResNet and MobileNet acuracy is very close.
 
 ANd the author points out the better result is gained in DenseNet which matches my initial analysis before, since the complexity of DenseNet is between InceptionV3 and mobileNet. But at this time, I need to switch to other important tasks on VLAD and FV.
 
 ## Experiment 6 and Result Analysis
 
 The same author in Experiment 5 shows the best result is achieved with the help of AutoML (95%). So I guess this is the upper limit, and I definitely will try it in the near future.
+
+## Improvement
+
+1. Using GPU accerlarated library to reduce the time spent on data augmentation.
+2. Enriching the dataset by using external data.
+3. Assigning bigger weight in loss function for minority classes.
