@@ -134,3 +134,16 @@ For double confrim, I tried mobilenet in 75% scale, the result decrease accrodin
 ![Imgur](https://i.imgur.com/7LmA4pl.png)
 
 At this moment, I want to give Inception v3 a try.
+
+## Experiment 4 and Result Analysis
+
+The outcome is not ideal, possible reason may be due to the augmentated dataset, the new added images for minorities impact the overall performence.
+
+![Imgur](https://i.imgur.com/7nvbxqH.png)
+
+But the positive side, with them, I can test models in a short time.
+![Imgur](https://i.imgur.com/VHOv8ZY.png)
+
+## Experiment 5 and Result Analysis
+
+After a pause, I search for others solutions especially on the model selection part. [Deep Learning Notes: Skin Cancer Classification using DenseNets and ResNets](https://medium.com/@peijin/deep-learning-notes-skin-cancer-classification-using-densenets-and-resnets-6a122d818d58) gives a good comparision, and the results of validation accuracy given on ResNet50 is similar to what I get in experiment 1 and 2, because 
