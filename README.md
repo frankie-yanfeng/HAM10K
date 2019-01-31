@@ -125,11 +125,11 @@ Based on the effort spent on experiment 1 and 2, in experimet 3, I intend to fin
 
 So, I recall one of the project did before - [tensorflow official example on image classifier retraining](https://www.tensorflow.org/hub/tutorials/image_retraining#other_architectures), with this scaffold, I can try each model from the [tensorflow hub](https://tfhub.dev/s?module-type=image-feature-vector) very easily.
 
-Firtly, I tried mobilenet (full scale), the result is very close to experiment 1 and 2.
+Firstly, I tried mobilenet (full scale), the result is very close to experiment 1 and 2.
 
 ![Imgur](https://i.imgur.com/0v4PIBj.png)
         
-For double confrim, I tried mobilenet in 75% scale, the result decrease accrodingly as expected.
+For double confirm, I tried mobilenet in 75% scale, the result decrease accrodingly as expected.
 
 ![Imgur](https://i.imgur.com/7LmA4pl.png)
 
