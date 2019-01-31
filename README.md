@@ -80,3 +80,41 @@ Top 3 accuracy exceeding 70%  as a result returned less than 3 seconds
         Dermatofibroma is a benign skin lesion regarded as either a benign proliferation or an inflammatory reaction to minimal trauma. It is brown often showing a central zone of fibrosis dermatoscopically [24].[115 images]
         
     [Total images = 10015]
+
+## Experiment 1 and Result Analysis
+
+### Gist
+My first experiment start with MobileNet, the code is in <b>Experiment1_[tf_mobilenet_model].ipynb.</b>
+
+The basic ideas are as below:
+1. Finding out the repeated images in given dataset, and carefully splitting the train and test dataset in order to make sure there is no duplicated images are taken into test set.
+
+2. Using data augmentation to recude the impact of data imbalance.
+
+3. Stratified split
+
+4. Removing last 5 layers and adding one new dense layer for seven categories classification.
+
+5. Freezing the all layers except the last 23 ones for retraining.
+
+6. Callback involves checkpoint, reduce_lr, earlyStopping
+
+### Outcome
+
+
+## Experiment 2 and Result Analysis
+
+### Gist
+My second experiment is also with MobileNet, the code is in <b>Experiment2_[tf_mobilenet_model].ipynb (tf_mobilenet_model.h5).</b>. The motivation is to run this model again and observe performence change.
+
+### Outcome
+After 43 epochs, the training accuracy is very decent which is around 88%, amd the validation one is around 0.73%.
+So it seems the first trail is relatively successful. But there are some issues as below:
+
+1. Due to the respective train and validation accuracy, overfitting is still observed.
+
+2. Since this model is run from checkpoint, very little improement is gained, which may be in plateau.
+
+3.  nv & bcc, nv & df and nv & mel, etc are relatively difficult to be differentiated.
+
+4. Even with the boost of data augmentation, the minorities are still in poor performance, which may be explained by lacking of variety amd model memory.
