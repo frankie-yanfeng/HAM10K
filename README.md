@@ -141,7 +141,7 @@ The outcome is not ideal, possible reason may be due to the augmentated dataset,
 
 ![Imgur](https://i.imgur.com/7nvbxqH.png)
 
-But the positive side is taht with the help of bottleneck I can test models in a short time (4000 epochs).
+But the positive side is that with the help of bottleneck I can test models in a short time (4000 epochs).
 ![Imgur](https://i.imgur.com/VHOv8ZY.png)
 
 ## Experiment 5 and Result Analysis
