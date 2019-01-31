@@ -127,10 +127,10 @@ So, I recall one of the project did before - [tensorflow official example on ima
 
 Firtly, I tried mobilenet (full scale), the result is very close to experiment 1 and 2.
 
-        [tensorflow hub mobilenet in full scale](https://i.imgur.com/0v4PIBj.png)
+        [Imgur](https://i.imgur.com/0v4PIBj.png)
 
 For double confrim, I tried mobilenet in 75% scale, the result decrease accrodingly as expected.
 
-        [tensorflow hub mobilenet in 0.75 scale](https://i.imgur.com/7LmA4pl.png)
+        [Imgur](https://i.imgur.com/7LmA4pl.png)
 
 At this moment, I want to give Inception v3 a try.
