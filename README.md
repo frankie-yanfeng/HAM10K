@@ -105,7 +105,7 @@ The basic ideas are as below:
 ## Experiment 2 and Result Analysis
 
 ### Gist
-My second experiment is also with MobileNet, the code is in <b>Experiment2_[tf_mobilenet_model].ipynb (tf_mobilenet_model.h5).</b>. The motivation is to run this model again and observe performence change.
+My second experiment is also with MobileNet, the code is in <b>Experiment2_[tf_mobilenet_model].ipynb [tf_mobilenet_model.h5](https://drive.google.com/file/d/1ZjWhGf6Jiviy7s_WtdxLcD1GY7lQsrg7/view?usp=sharing).</b>. The motivation is to run this model again and observe performence change.
 
 ### Outcome
 After 43 epochs, the training accuracy is very decent which is around 88%, amd the validation one is around 0.73%.
